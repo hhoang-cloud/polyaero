@@ -1,0 +1,98 @@
+# GabaritChapitre
+
+Gabarit d'un chapitre de cours classique (notions, définitions, exemples, exercices) : une section Moodle, une zone de texte.
+
+## Ordre (à adapter)
+1. `EnTeteSection` (libellé Chapitre, Module, Séance…)
+2. `Objectifs`
+3. Contenu, dans l'ordre du cours : `Texte` (intertitres, paragraphes), `Definition`, `Image`, `Exemple`, `Encadre`, `Tableau`, `Processus`, `Integration` ; `Etape` (titre seul) pour replier une partie longue
+4. `Exercice` ou `Question`
+5. `ARetenir`
+6. `Ressources` (facultatif)
+7. `FinSection`
+
+## Code complet (exemple)
+
+```html
+<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1d2125; width: 85%; margin: 0 auto 32px auto; box-sizing: border-box; line-height: 1.6;">
+  <div style="display: flex; flex-wrap: wrap; background-color: #0b3b60; color: #ffffff; border-radius: 10px; overflow: hidden; margin-bottom: 16px;">
+  <div style="flex: 0 0 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 18px 12px; text-align: center; background-color: #082c48;">
+    <span style="font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #ffffff;">Chapitre</span>
+    <span style="font-size: 44px; font-weight: 800; line-height: 1; color: #fcd860;">02</span>
+  </div>
+  <div style="flex: 1 1 320px; padding: 18px 24px;">
+    <h3 style="margin: 0 0 6px 0; font-size: 22px; font-weight: 700; line-height: 1.3; color: #ffffff;">Les forces qui s'exercent sur un avion</h3>
+    <p style="margin: 0; font-size: 15px; color: #ffffff;">Portance, poids, poussée et traînée : comprendre ce qui maintient un avion en vol.</p>
+  </div>
+</div>
+<div style="margin: 16px 0; padding: 16px 20px; border: 1px solid #dee2e6; border-radius: 8px; background-color: #ffffff;">
+  <p style="margin: 0 0 8px 0; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #0b3b60;">Objectifs</p>
+  <ul style="margin: 0; padding-left: 20px; font-size: 15px;">
+    <li>Nommer les quatre forces qui s'exercent sur un avion</li>
+    <li>Expliquer l'origine de la portance</li>
+    <li>Décrire l'équilibre des forces en vol de croisière</li>
+  </ul>
+  <p style="margin: 12px 0 0 0; font-size: 14px; color: #495057;"><strong>Durée</strong> 30 min · <strong>Prérequis</strong> chapitre 1</p>
+</div>
+<p style="margin: 0 0 12px 0; font-size: 15px;">Un avion en vol est soumis à quatre forces. Deux sont liées à l'air qui l'entoure, une au moteur, une à la gravité.</p>
+<h4 style="margin: 28px 0 10px 0; font-size: 19px; font-weight: 700; line-height: 1.3; color: #0b3b60;">La portance</h4>
+<p style="margin: 0 0 12px 0; font-size: 15px;">L'aile dévie l'air vers le bas ; en réaction, l'air exerce sur l'aile une force vers le haut : la <mark style="background-color: #fdf6dc; color: #1d2125; padding: 0 3px; border-radius: 3px;">portance</mark>.</p>
+<ul style="margin: 0 0 12px 0; padding-left: 22px; font-size: 15px;">
+  <li>Elle augmente avec la vitesse.</li>
+  <li>Elle augmente avec l'angle d'incidence, jusqu'au décrochage.</li>
+</ul>
+<div style="margin: 16px 0; padding: 14px 18px; background-color: #eaf1f7; border-radius: 8px; font-size: 15px;">
+  <p style="margin: 0 0 8px 0; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #0b3b60;">Définition</p>
+  <p style="margin: 0;"><strong style="color: #0b3b60;">Portance</strong> : force aérodynamique perpendiculaire à l'écoulement de l'air, produite principalement par l'aile.</p>
+</div>
+<div style="margin: 16px 0;">
+  <img class="img-fluid" src="/_blob/0d9f38445a53915b9ab681082891cadf" alt="Avion dans un hangar" style="max-width: 100%; height: auto; display: block; border-radius: 6px; border: 1px solid #dee2e6;">
+  <p style="margin: 6px 0 0 0; font-size: 13px; color: #495057;">Figure 1 · Le profil de l'aile produit la portance.</p>
+</div>
+<div style="margin: 16px 0; padding: 14px 18px; border: 1px solid #dee2e6; border-radius: 8px; background-color: #ffffff; font-size: 15px;">
+  <p style="margin: 0 0 8px 0; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #0b3b60;">Exemple</p>
+  <p style="margin: 0;">En vol de croisière à altitude constante, la portance équilibre exactement le poids de l'avion.</p>
+</div>
+<div style="margin: 16px 0; border: 1px solid #dee2e6; border-radius: 8px; background-color: #ffffff; overflow: hidden;">
+  <div style="padding: 14px 18px;">
+    <p style="margin: 0 0 8px 0;"><span style="display: inline-block; padding: 2px 10px; border-radius: 4px; background-color: #0b3b60; color: #ffffff; font-size: 13px; font-weight: 700;">Exercice 1</span></p>
+    <p style="margin: 0; font-size: 15px;">Un avion vole en palier, à vitesse constante. Que peut-on dire des quatre forces qui s'exercent sur lui ?</p>
+  </div>
+  <details style="border-top: 1px solid #dee2e6;">
+    <summary style="padding: 10px 18px; cursor: pointer; list-style: none; outline: none; font-size: 14px; font-weight: 600; color: #0b3b60;">Voir la correction &#9662;</summary>
+    <div style="padding: 0 18px 14px 18px; font-size: 15px;">
+      <p style="margin: 0;">Elles s'équilibrent deux à deux : la portance compense le poids et la poussée compense la traînée.</p>
+    </div>
+  </details>
+</div>
+<div style="margin: 24px 0; padding: 16px 20px; background-color: #f1f3f5; border-radius: 8px;">
+  <p style="margin: 0 0 8px 0; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #0b3b60;">À retenir</p>
+  <ul style="margin: 0; padding-left: 20px; font-size: 15px;">
+    <li>Quatre forces : portance, poids, poussée, traînée.</li>
+    <li>La portance vient de l'aile et dépend de la vitesse et de l'incidence.</li>
+    <li>En croisière, les forces s'équilibrent deux à deux.</li>
+  </ul>
+</div>
+<div style="margin: 24px 0;">
+  <p style="margin: 0 0 8px 0; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #0b3b60;">Ressources</p>
+  <div style="border-bottom: 1px solid #dee2e6;">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid #dee2e6;">
+      <span style="flex: 0 0 auto; display: inline-block; min-width: 48px; text-align: center; padding: 2px 8px; border-radius: 4px; background-color: #f1f3f5; color: #0b3b60; font-size: 12px; font-weight: 700;">PDF</span>
+      <a href="#" style="flex: 1 1 200px; font-size: 15px; font-weight: 600; color: #0b3b60; text-decoration: none;">Support de cours complet</a>
+      <span style="flex: 0 0 auto; font-size: 13px; color: #495057;">2,4 Mo</span>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid #dee2e6;">
+      <span style="flex: 0 0 auto; display: inline-block; min-width: 48px; text-align: center; padding: 2px 8px; border-radius: 4px; background-color: #f1f3f5; color: #0b3b60; font-size: 12px; font-weight: 700;">Vidéo</span>
+      <a href="#" style="flex: 1 1 200px; font-size: 15px; font-weight: 600; color: #0b3b60; text-decoration: none;">Démonstration en soufflerie</a>
+      <span style="flex: 0 0 auto; font-size: 13px; color: #495057;">6 min</span>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid #dee2e6;">
+      <span style="flex: 0 0 auto; display: inline-block; min-width: 48px; text-align: center; padding: 2px 8px; border-radius: 4px; background-color: #f1f3f5; color: #0b3b60; font-size: 12px; font-weight: 700;">Lien</span>
+      <a href="#" style="flex: 1 1 200px; font-size: 15px; font-weight: 600; color: #0b3b60; text-decoration: none;">Glossaire aéronautique</a>
+      <span style="flex: 0 0 auto; font-size: 13px; color: #495057;"></span>
+    </div>
+  </div>
+</div>
+<p style="margin: 20px 0 0 0; padding: 12px 16px; background-color: #fdf6dc; border-radius: 8px; font-size: 15px;"><strong>Fin du chapitre.</strong> Marquez la section comme terminée et passez au chapitre 3.</p>
+</div>
+```

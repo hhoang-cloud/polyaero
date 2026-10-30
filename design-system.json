@@ -1,0 +1,72 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Exemples": {
+      "files": {
+        "atelier-hangar.jpg": {
+          "blob": "0d9f38445a53915b9ab681082891cadf",
+          "name": "atelier-hangar.jpg",
+          "size": 74674,
+          "type": "image/jpeg"
+        },
+        "cave-realite-virtuelle.jpg": {
+          "blob": "2662a995532f61fcc2ca134e12139cfc",
+          "name": "cave-realite-virtuelle.jpg",
+          "size": 231517,
+          "type": "image/jpeg"
+        }
+      },
+      "name": "Exemples",
+      "order": [
+        "atelier-hangar.jpg",
+        "cave-realite-virtuelle.jpg"
+      ],
+      "tile": "m"
+    },
+    "Logos": {
+      "files": {
+        "formasup-mediterranee.svg": {
+          "blob": "75e25c2120228b2b611cc854d6358b11",
+          "name": "formasup-mediterranee.svg",
+          "size": 9247,
+          "type": "image/svg+xml"
+        },
+        "polyaero-logo.svg": {
+          "blob": "c517bdf8ed8e1e8eb8b3d4c79d918efd",
+          "name": "polyaero-logo.svg",
+          "size": 9665,
+          "type": "image/svg+xml"
+        }
+      },
+      "name": "Logos",
+      "order": [
+        "polyaero-logo.svg",
+        "formasup-mediterranee.svg"
+      ],
+      "tile": "l"
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-21T07:14:06Z",
+    "v": 1
+  },
+  "docs": {
+    "sections": []
+  },
+  "groups": [
+    "Logos",
+    "Exemples"
+  ],
+  "lastChange": {
+    "by": "Mohamed",
+    "at": "2026-10-21T07:19:40Z",
+    "via": "Claude (Cowork)",
+    "note": "Cours classiques et tutoriels : EnTeteSection, Sommaire, FinSection, Texte, Definition, Exemple, Exercice, Ressources, GabaritChapitre"
+  },
+  "layout": "files",
+  "libraries": [],
+  "namespace": "PolyAeroMoodle",
+  "sections": {},
+  "title": "Polyaéro Moodle"
+}
